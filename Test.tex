@@ -1,0 +1,526 @@
+\documentclass[addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{geometry}
+\geometry{
+ letterpaper,
+ left=1in,
+ top=1in,
+ right=1in,
+ bottom=1in,
+ textwidth=6in,
+}
+
+\pagestyle{head}
+
+\runningheadrule
+\runningheader{CVHSSO Designer Genes C}{}{Test Booklet - Page \thepage}
+
+\title{Centreville High School \\ Science Olympiad \\ Designer Genes C Test}
+\author{CVHS Science Olympiad}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\thispagestyle{empty}
+
+\noindent
+\includegraphics[width=1\textwidth, scale=0.5]{testcover.jpg}
+
+\begin{center}
+
+\textbf{\large{Instructions}}
+
+\end{center}
+
+\begin{enumerate}
+    \item Teams are given 50 min to complete the test upon when instructed to start
+    \item You can write on this test packet, make your final answers clear
+    \item You are allowed 1 note sheet \& 1 non-programmable, non-graphing calculator per person
+    \item For any calculation-based problems, express your answer to 2 decimal places if necessary
+    \item Point values are listed by the question; tiebreakers are the first question correct/missed
+    \item Good luck! Have fun! %Any questions, email me at strker74@gmail.com
+
+\end{enumerate}
+
+\newpage
+
+\section*{Figures}
+
+\noindent
+
+\begin{figure}[h!]
+
+\begin{subfigure}{0.6\textwidth}
+\centering
+\includegraphics[width=0.9\linewidth]{Plasmid.jpg} 
+\caption{Plasmid Map}
+\label{fig:subim1}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+\centering
+\includegraphics[width=0.9\linewidth]{Fingerprint.jpg}
+\caption{DNA Fingerprint}
+\label{fig:subim2}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+\centering
+\includegraphics[width=0.9\linewidth]{Chromotogram.jpg}
+\caption{DNA Chromotogram}
+\label{fig:subim3}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\centering
+\includegraphics[width=0.9\linewidth]{CentralDogma.jpg}
+\caption{Central Dogma of Molecular Biology}
+\label{fig:subim4}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+\centering
+\includegraphics[width=0.9\linewidth]{Operon.jpg}
+\caption{Basic Operon Structure}
+
+\label{fig:subim5}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\centering
+\includegraphics[width=0.9\linewidth]{ChiSquareTable.jpg}
+\caption{$\chi^2$ Table}
+\label{fig:subim6}
+\end{subfigure}
+
+\begin{subfigure}{1\textwidth}
+\centering
+\includegraphics[width=0.4\linewidth]{Pedigree.jpg}
+\caption{Pedigree}
+\label{fig:subim7}
+\end{subfigure}
+
+
+
+\end{figure}
+
+\newpage
+
+\begin{questions}
+
+\bracketedpoints
+
+\printanswers
+
+\fullwidth{\Large \textbf{Section A: Biotechnologies}}
+
+\question[4] You are studying the alien organism \textit{Geneticus impossiblus}, which is biochemically similar to life on Earth. You decide to extract plasmid DNA from the cultured cells. Order the steps for completing this process: \fillin[I, IV, III, II][0pt]
+
+\renewcommand{\labelenumi}{\Roman{enumi}}
+\begin{enumerate}
+    \item Cell Lysis
+    \item Precipitating DNA
+    \item Clearing Proteins
+    \item Phase Separation
+\end{enumerate}
+
+\question[3] After extracting the plasmid, you want to copy it using PCR. Describe PCR’s steps?
+
+\fullwidth{\fillin[Denaturation (Cleave Hydrogen Bonds), Annealation (Cool DNA, Add Primers), \&][\textwidth] \\
+\fillin[Extension (Heat Resistant Taq Polymerase Extends the Primers)][\textwidth]}
+
+\question[1] Which enzyme is involved in the last step of PCR?
+
+\begin{choices}
+    \CorrectChoice Taq Polymerase
+    \choice DNA Polymerase I
+    \choice RNA Polymerase II
+    \choice DNA Polymerase III
+\end{choices}
+
+\question[3] Identify an advantage \& disadvantage of using Pfu Polymerase in PCR over the correct answer to the prior question? \fillin[Proofreading, Slower; Any other valid answers work][0pt]
+
+\question[12] You want to determine how many target sequences of DNA are created after $c$ cycles of PCR. Write the recursive formula for $PCR(c)$ in terms of $PCR(c-1)$ and $c$ describing this. Include the initial case of $PCR (3)$ in the formula. Hint: use a diagram. 
+
+\fullwidth{\fillin[$PCR(c)=2*(PCR(c-1)+(c-2)); PCR (3)=2$][\textwidth]}
+
+\question Now you want to try to map the plasmid by identifying the specific genes by their promoter sequence. For each of the domains, name the promoter sequence:
+
+\begin{parts}
+
+\part[1] Bacteria \fillin[Pribnow Box][0pt]
+\part[1] Archaebacteria \fillin[TATA Box][0pt]
+\part[1] Eukarya \fillin[TATA Box][0pt]
+
+\end{parts}
+
+\question[3] You found 2 critical promoter components in the plasmid at the regions -10 \& -35. Knowing all this, which is the most probable domain for \textit{G. impossiblus} \& give 2 reasons why that is the case?
+
+\fullwidth{\fillin[Bacteria (Plasmids/Pribnow Box at -10 \& -35 regulator are only found in bacteria)][\textwidth]}
+
+\question[3] Using basic sequencing, you were able to map parts of the extracted cloned plasmid as well as the restriction sites for 3 common restriction enzymes shown in Figure a. Which restriction enzymes should we use to extract the genes A, B, \& C? \fillin[A: RE-II/III; B: RE-I/II; C: RE-I/III][0pt]
+
+\fullwidth{You now sequence the genes; you are debating between sanger and next generation sequencing.}
+
+\question[1] Which method tracks light flashes to determine the nucleotide sequence? \fillin[Next Gen][0pt]
+
+\begin{parts}
+
+\part[2] Where does the energy for releasing this light come from during polymerization? \fillin[$\text{PO}_4$][0pt]
+\part[2] What byproduct other than light is released from polymerization? \fillin[Pyrophosphates][0pt]
+
+\end{parts}
+
+\question[1] Which method involves fluorescent ddNTPs? \fillin[Sanger Sequencing][0pt]
+
+\begin{parts}
+
+\part[2] What’s special about this molecule for sequencing? \fillin[No further polymerization][0pt] 
+\part[2] How is the sequence determined from the different sized strands? \fillin[Gel Electrophoresis][0pt]
+
+\end{parts}
+
+\question[4] You decide to use the latter sequencing method for the cleaved plasmid genes. Using the DNA fingerprint in Figure b (with a primer of 3’ TATAATTAC 5’), determine the sequence of the segment on this gene. Consider directionality. \fillin[3’ TATAATTACTCGAAGTCAG 5’][0pt]
+
+\question[4] Your colleague decides to use the former sequencing method to sequence a different plasmid’s genes. Using the chromatogram in Figure c, determine the sequence of the DNA segment from the gene. Use the same primer from the previous question. The colors green, red, black, \& blue represent A, T, G, \& C respectively. \fillin[3’ TATAATTACATGCTTCGGCAAGACTCAAA 5’][0pt]
+
+\question[2] Your colleague also mentions the first time they tried sequencing the gene, the chromatogram displayed only the first 2 nucleotides. Which chemical wasn’t added? \fillin[dGTP (1 pt for guanine)][0pt]
+
+\newpage
+
+\fullwidth{\Large \textbf{Section B: Molecular Genetics}}
+
+\question After sequencing the rest of the genome of \textit{G. impossiblus}, you want to determine its method of DNA replication. Name each protein in both bacteria \& eukaryotes which:
+
+\begin{parts}
+
+\part[2] Unwinds the double helix at the origin of replication \fillin[Helicase][0pt]
+\part[2] Removes \& replaces the primers \fillin[DNA Polymerase I/RNAse \& $\alpha$][0pt]
+\part[2] Synthesizes the leading strand continuously \fillin[DNA Polymerase III/$\epsilon$][0pt]
+\part[2] Creates phosphodiester bonds between unlinked DNA \fillin[DNA Ligase][0pt]
+\part[2] Maintains the separation of the strands past the origin of replication \fillin[SSBPs][0pt]
+\part[2] Synthesizes the first stretch of the DNA Okazaki fragments \fillin[DNA Polymerase III/$\alpha$][0pt]
+\part[2] Synthesizes the primer \fillin[RNA Primase][0pt]
+\part[2] Relieves the strain of the double helix upstream the origin of replication \fillin[Topoisomerase][0pt]
+\part[2] Synthesizes the lagging strand discontinuously \fillin[DNA Polymerase III/$\delta$][0pt]
+\part[2] Proofreads the DNA \fillin[DNA Polymerase I/RNAse \& $\alpha$][0pt]
+
+\end{parts}
+
+\question[2] Which subunit of DNA Polymerase III is responsible for the 3' to 5' exonuclease activity? \fillin[$\epsilon$][0pt]
+
+\question[3] If replication was halted because of damaged DNA, which bacterial enzyme will restart replication \& perform DNA repair in bacteria? \fillin[DNA Polymerase II][0pt]
+
+\question[2] Which enzyme will extend the telomeres in eukaryotes? \fillin[Telomerase][0pt]
+
+\question[3] If the DNA is damaged by UV light causing dimers, which enzyme directly reverses this \& why do humans not use this method of repair? ? \fillin[Photolyase, not in humans][0pt]
+
+\question[4] After studying the method of replication, you want to further study its mechanism of genetic expression. Similar to life on Earth, \textit{G. impossiblus} genes are ultimately expressed as 1 of 2 possible groups of catalysts. Name these biomolecules? \fillin[Ribozymes/RNA, Polypeptides/Proteins][0pt]
+
+\question[5] Label the letters in the central dogma of biology located in Figure d on this sheet?
+
+\fillin[A. DNA B. RNA C. Proteins D. Transcription E. Translation][0pt]
+
+\begin{parts}
+
+\part[2] Give an exception to this flow of genetic information involving molecules A \& B in Figure d. \fillin[Reverse Transcriptase][0pt]
+
+\end{parts}
+
+\question You also notice 2 prominent functional groups outside the sequenced nucleotides: one bonded to the histones, the other to CpG sites.
+\begin{parts}
+
+\part[2] In order, what are these functional groups? \fillin[Acetyl, Methyl][0pt]
+\part[1] Which is bonded to more expressed DNA? \fillin[Acetyl][0pt]
+\part[2] What type of non-Mendelian inheritance does this represent? \fillin[Epigenetic Inheritance][0pt]
+
+\end{parts}
+
+\question Now consider \textit{G. impossiblus} is a bacterial organism.
+
+\begin{parts}
+
+\part[4] Label the operon in Figure e (Genes, Promoter, Operator). Are these genes coordinately or combinatorially controlled? \fillin[A. Promoter B. Operator C. Genes; Coordinately][0pt]
+
+\part[3] Which control element would a regulatory protein bind to? \fillin[Operator][0pt]
+
+\begin{subparts}
+
+\subpart[1] What is the name of the gene coding for the \textit{trp} operon regulatory protein? \fillin[\textit{trpR}][0pt]
+
+\subpart[2] Where is this gene relative to the operon? \fillin[Upstream][0pt]
+
+\end{subparts}
+
+\part[5] Name the main bacterial transcription factor \& the specific promoter region it binds to? 
+
+\fillin[$\sigma$, -35 region][0pt]
+
+\part For each characteristic, label it as either from the \textit{lac} or \textit{trp} operon:
+
+\begin{subparts}
+
+\subpart[\half] Inducible \fillin[\textit{lac}][0pt]
+\subpart[\half] Repressible \fillin[\textit{trp}][0pt]
+\subpart[\half] Catabolic Pathway \fillin[\textit{lac}][0pt]
+\subpart[\half] Anabolic Pathway \fillin[\textit{trp}][0pt]
+
+\end{subparts}
+
+\part[5] Explain the role of cAMP in expression of the lac operon. Detail any other biomolecules involved in the process \& link it to maintaining metabolic homeostasis.
+
+\fullwidth{
+\fillin[cAMP binds to CAP which promotes RNA Polymerase binding to the promoter. cAMP][\textwidth] \\
+\fillin[accumulates due to low glucose levels, resulting in the need to metabolize lactose into][\textwidth] \\
+\fillin[other monosaccharides, supplying metabolic pathways \& maintaining homeostasis.][\textwidth]}
+
+\part[3] \fillin[Aminoacyl-tRNA][100pt]\ \fillin[Synthetases], a group of enzymes, facilitates the charging of a tRNA with its respective amino acid?
+
+\part[3] What are the sizes of the large/small/complete ribosomal subunits? \fillin[50s/30s/70s][0pt]
+
+\part[2] What energy-carrying biomolecule is used throughout translation? \fillin[GTP][0pt]
+
+\part[2] tRNAs enter the ribosome at the \fillin[A][25pt]-site, form a \fillin[peptide] bond and move to the \fillin[P][25pt]-site, \& exit at the \fillin[E][25pt]-site.
+
+\end{parts}
+
+\question Now consider \textit{G. impossiblus} is a eukaryotic organism.
+
+\begin{parts}
+
+\part[3] DNA bending brings \fillin[enhancers], groups of distal control elements, closer to the
+promoter so \fillin[transcription]\ \fillin[factors]\ can bind to them to help initiate transcription.
+
+\part For each RNA Polymerase, write the main corresponding type of RNA synthesized.
+
+\begin{subparts}
+
+\subpart[1] RNA Polymerase I \fillin[rRNA][0pt]
+\subpart[1] RNA Polymerase II \fillin[mRNA][0pt]
+\subpart[1] RNA Polymerase III \fillin[tRNA][0pt]
+\subpart[1] RNA Polymerase IV \fillin[some siRNA][0pt]
+\subpart[1] RNA Polymerase V \fillin[some siRNA for heterochromatin formation][0pt]
+
+\end{subparts}
+
+\part[2\half] Which of the RNA Polymerases found above are in humans? \fillin[I, II, III][0pt]
+
+\part[2] In one method of transcription termination, the \fillin[Rho][25pt]\ protein binds to the pre-mRNA at the \fillin[\textit{rut}][25pt]\ site and cleaves it from the complex.
+
+\part[4] Nuclear compartmentalization allows their pre-mRNA to undergo post-transcriptional modifications. Identify \& describe four of these.
+
+\fullwidth{
+\fillin[5’ Cap: Modified Guanine][\textwidth] \\
+\fillin[3’ Poly-A-Tail: 50-250 Adenine nucleotides][\textwidth] \\
+\fillin[RNA Splicing: spliceosomes splice introns leaving exons][\textwidth] \\
+\fillin[RNA Editing: Alters mRNA nucleotide sequence][\textwidth]}
+
+\part[3] What are the sizes of the large/small/complete ribosomal subunits? \fillin[60s/40s/80s][0pt]
+
+\part For each nucleic acid, indicate if it is involved in transcription (C), translation (L), or both (B):
+
+\begin{subparts}
+
+\subpart[1] \fillin[C][12pt] gDNA
+\subpart[1] \fillin[C][12pt] pre-mRNA
+\subpart[1] \fillin[L][12pt] miRNA
+\subpart[1] \fillin[B][12pt] mRNA
+\subpart[1] \fillin[C][12pt] snRNA
+\subpart[1] \fillin[L][12pt] tRNA
+\subpart[1] \fillin[L][12pt] rRNA
+
+\end{subparts}
+
+\part There are many non-coding RNAs that play a critical role in genetic expression. For each description, answer with the indicated type of ncRNA:
+
+\begin{subparts}
+
+\subpart[1\half] X chromosome inactivation \fillin[lncRNA/Xist][0pt]
+\subpart[1\half] RNA Silencing (with a hairpin structure) \fillin[miRNA][0pt]
+\subpart[1\half] RNA Silencing (with double-stranded RNA) \fillin[siRNA][0pt]
+\subpart[1\half] Reestablishes appropriate DNA methylation in germ cells \fillin[piRNA][0pt]
+\subpart[1\half] Component of the spliceosome \fillin[snRNA][0pt]
+\subpart[1\half] Modify other RNAs for functionality \fillin[snoRNA][0pt]
+
+\end{subparts}
+
+\part[2] For the 2 silencing ncRNAs above, which can target more than one mRNA? \fillin[miRNA][0pt]
+
+\part[4] Organize these 4 steps of RNA splicing: \fillin[II, I, IV, III][0pt]
+
+\begin{enumerate}
+    \item U2 snRNP displaces BBP
+    \item U1 snRNP and BBP bind to mRNA
+    \item snRNP complex initiates a cut
+    \item Branch site is extruded
+\end{enumerate}
+
+\end{parts}
+
+\question[2\half] A possible sequence of nucleotides in the template strand of DNA that would code for the polypeptide sequence phe-leu-ile-val would be?
+
+\begin{choices}
+    \choice 3' AAC-GAC-GUC-AUA 5'
+    \CorrectChoice 3' AAA-GAA-TAA-CAA 5'
+    \choice 3' AUG-CTG-CAG-TAT 5'
+    \choice 3' AAA-AAT-ATA-ACA 5'
+    \choice 3' TTG-CTA-CAG-TAG 5'
+\end{choices}
+
+\newpage
+
+\fullwidth{\Large \textbf{Section C: Heredity}}
+
+\question[3] Continuing with RNA-related questions, describe the RNA World hypothesis? 
+
+\fullwidth{\fillin[In the origin of life, RNA was the self-replicating genetic material and catalytic molecule][\textwidth]}
+
+\begin{parts}
+
+\part[3] What world hypothesis followed the RNA World hypothesis? \fillin[RNP World][0pt]
+
+\end{parts}
+
+\question[5] You have been recently informed you may have extracted compartmentalized DNA from \textit{G. impossiblus}'s organelles. If so, what type of inheritance of these genes would occur? \fillin[Maternal] Why? 
+
+\fullwidth{\fillin[Cytoplasmic inheritance; egg carries mtDNA, sperm mtDNA destroyed in fertilization][\textwidth]}
+
+\question[2] Which is not true about oDNA?
+
+\begin{choices}
+
+\choice oDNA is found in only plastids and mitochondrion
+\CorrectChoice oDNA is circular shaped with histones
+\choice oDNA has limited recombination
+\choice oDNA is translated by organelle ribosomes
+
+\end{choices}
+
+\question After a couple tests, you confirmed you extracted nuclear DNA. You now attain a culture of \textit{G. impossiblus} (648 individuals, equally male/female), however, there is an sex-linked dominant disorder in the gene pool, which you identified 243 females expressed. For context, the sex determination for this organism uses the X-0 system.
+
+\begin{parts}
+
+\part[2] Identify the total number of males with the disorder? \fillin[162][0pt]
+
+\part[2] Identify the total number of female hybrids for the disorder. \fillin[162][0pt]
+
+\part[8] To create the culture, you originally had 2 different cultures; in one you bred purebred affected females \& unaffected males, in the other you bred purebred unaffected females \& affected males. After one generation you combined the offspring from these cultures and bred them for another generation to get the current culture consisting of only the offspring. Prove this procedure's expected final genotypic ratios correlate with the ones observed in the culture described at the begining of the problem.
+
+\fullwidth{\fillin[Culture 1 (XX $\times$ x0) offspring are Xx/X0; Culture 2 (xx $\times$ X0) offspring are Xx/x0][\textwidth]}
+\fullwidth{\fillin[Culture 3 (Xx $\times$ X0 \& Xx $\times$ x0) offspring are 2X0 : 2x0 : 1XX : 2Xx : 1xx][\textwidth]}
+\fullwidth{\fillin[This matches the Hardy Weinberg equilibrium; $p=q=2pq=0.5;p^2=q^2=0.25$][\textwidth]}
+
+\part[5] You allowed this isolated culture (to prevent gene flow) to continue to mate (randomly) and found out later that of 900 individuals, 100 females were unaffected. Did natural selection occur? Use a $\chi^2$ analysis with 95\% confidence (table is Figure f) to support your answer. \fillin[No: $4.42 < 9.49$][0pt]
+
+\fullwidth{\centering{
+\includegraphics[width=0.75\textwidth, scale=0.5]{HWChiSquared.jpg} \\
+\textbf{Where p \& q are the (un)affected males, $p^2\ \&\ q^2$ are the (un)affected purebred females, \& 2pq are the hybrid females.}
+}}
+%\newpage
+
+\part You know study a pedigree (Figure g) showing the family of 3 current individuals (sex known, phenotype unknown).
+
+\begin{subparts}
+
+\subpart[1] Identify the mode of inheritance for this pedigree. Does this match that observed at the beginning of the problem? \fillin[Sex-Linked Dominant, Same as stated][0pt]
+
+\subpart[2] If all the inbreeding individuals (II-2 \& II-3) were present from the procedure in part c, identify their possible genotypes. \fillin[x0, Xx, see Culture 3 parents][0pt]
+
+\subpart[2] Identify the probability that all F2 offspring are affected. \fillin[0.5*0.5*1 = 0.25][0pt]
+
+\end{subparts}
+
+\end{parts}
+
+\fullwidth{Now, on to some more broader genetics questions.}
+
+\question Label each characteristic with it's mode of inheritance (Complete/Incomplete/Codominance, Multiple Alleles, Pleiotropy, Epistasis, Polygenic, \& Multifactoral). Use each mode only once.
+
+\begin{parts}
+
+\part[\half] Sickle-Cell Anemia \fillin[Pleiotropy][0pt]
+\part[\half] Pink Snapdragons \fillin[Codominance][0pt]
+\part[\half] Diabetes \fillin[Multifactoral][0pt]
+\part[\half] Roan Cows \fillin[Incomplete Dominance][0pt]
+\part[\half] Green Peas \fillin[Complete Dominance][0pt]
+\part[\half] Albinism \fillin[Epistasis][0pt]
+\part[\half] ABO Blood System \fillin[Multiple Alleles][0pt]
+\part[\half] Human Height \fillin[Polygenic][0pt]
+
+\end{parts}
+
+\question For each disorder, identify the chromosomal abnormality.
+
+\begin{parts}
+
+\part[1] Turner Syndrome \fillin[Monosomy 23][0pt]
+\part[1] Patau Syndrome \fillin[Trisomy 13][0pt]
+\part[1] Klinefelters Syndrome \fillin[23 XXY][0pt]
+\part[1] Downs Syndrome \fillin[Trisomy 21][0pt]
+\part[1] Edwards Syndrome \fillin[Trisomy 18][0pt]
+
+\end{parts}
+
+\question[1] What is the genotypic ratio of a cross between a dominant purebred and a hybrid for a single trait?
+
+\begin{choices}
+
+\CorrectChoice 2 Homozygous Dominant: 2 Heterozygous: 0 Homozygous Recessive
+\choice 1 Homozygous Dominant: 2 Heterozygous: 1 Homozygous Recessive
+\choice 3 Homozygous Dominant: 0 Heterozygous: 1 Homozygous Recessive
+\choice 0 Homozygous Dominant: 4 Heterozygous: 0 Homozygous Recessive
+
+\end{choices}
+
+\question[1] What is the phenotypic ratio of a cross between a homozygous dominant and recessive?
+
+\begin{choices}
+
+\choice 3 Dominant: 1 Recessive
+\choice 1 Dominant: 3 Recessive
+\choice 2 Dominant: 2 Recessive
+\CorrectChoice 4 Dominant: 0 Recessive
+
+\end{choices}
+
+\question[1] In which phase of mitosis are kinetochores binding to microtubules?
+
+\begin{choices}
+
+\choice Prophase
+\CorrectChoice Metaphase
+\choice Anaphase
+\choice Telophase
+
+\end{choices}
+
+\question[3] In which subphase of prophase I does crossing over take place? \fillin[Pachytene][0pt]
+
+\question For each genetic disorder, answer with the chromosome(s) affected.
+
+\begin{parts}
+
+\part[2] Huntington's Disease \fillin[Chromosome 4][0pt]
+\part[2] Tay-Sachs \fillin[Chromosome 15][0pt]
+\part[2] Hemophilia \fillin[Chromosome 23][0pt]
+\part[2] Cri du chat \fillin[Chromosome 5][0pt]
+\part[2] Chronic Myelogenous Leukemia \fillin[Chromosome 9/22][0pt]
+
+\end{parts}
+
+\question[4] Which law states embryo development resembles the species evolution. \fillin[Biogenetic Law][0pt]
+
+\question For each statement, identify if it is true or false. If false, correct it by changing the italicized words.
+
+\begin{parts}
+
+\part[3] Turner Syndrome \textit{is the only nonlethal monosomy} \fillin[T][0pt]
+\part[3] Human mtDNA codes for \textit{ t/rRNAs/respiration/replication proteins} \fillin[F: No Replication][0pt]
+\part[3] Homologous chromosomes pair \textit{in the leptotene phase} \fillin[F: zygotene phase][0pt]
+\part[3] Bird sex chromosomes \textit{are ZW (Male) \& ZZ (Female)} \fillin[F: ZW (Female) \& ZZ (Male)][0pt]
+
+\end{parts}
+
+\end{questions}
+
+\end{document}
